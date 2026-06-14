@@ -1,5 +1,9 @@
 # 🛠️ Codex Skill Forge
 
+<p align="center">
+  🌐 <strong>Languages:</strong> 🇩🇪 Deutsch · 🇪🇸 Español · 🇬🇧 English · 🇧🇷 Português (Brasil) · 🇹🇷 Türkçe · 🇫🇷 French
+</p>
+
 **Codex Skill Forge** is a public-ready Codex skill and plugin package for creating better Codex skills from real briefs, examples, files, and constraints.
 
 It helps Codex design, scaffold, validate, forward-test, document, and package skills that are triggerable, concise, safe, progressive-disclosure friendly, and easy to install.
