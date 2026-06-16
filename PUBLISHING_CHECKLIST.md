@@ -28,5 +28,6 @@ Run this checklist before commit, push, tag, release, or marketplace publication
 ## Release
 
 - Use `v0.1.0` for the initial public release.
+- For later releases, use a new semver tag that matches `package.json`, plugin manifest, changelog, and release notes.
 - Do not upload generated archives unless they are intentional release assets.
 - Verify remote HEAD after push.

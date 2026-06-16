@@ -1,6 +1,6 @@
 {
   "name": "ai-skill-create",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "description": "Public Codex skill and plugin toolkit for creating, validating, and packaging high-quality Codex skills.",
   "license": "MIT",

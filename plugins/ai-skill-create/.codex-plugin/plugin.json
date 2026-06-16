@@ -1,6 +1,6 @@
 {
   "name": "ai-skill-create",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Create, validate, forward-test, and package high-quality Codex skills.",
   "author": {
     "name": "Ulas Sahin",
