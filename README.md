@@ -17,12 +17,12 @@
 
 <p align="center">
   🌐 <strong>Languages:</strong>
-  <a href="README.de.md">🇩🇪 Deutsch</a> ·
-  <a href="README.es.md">🇪🇸 Español</a> ·
-  <a href="README.md">🇬🇧 English</a> ·
-  <a href="README.pt-BR.md">🇧🇷 Português (Brasil)</a> ·
-  <a href="README.tr.md">🇹🇷 Türkçe</a> ·
-  <a href="README.fr.md">🇫🇷 Français</a>
+  <a href="README.de.md">🇩🇪</a> ·
+  <a href="README.es.md">🇪🇸</a> ·
+  <a href="README.md">🇬🇧</a> ·
+  <a href="README.pt-BR.md">🇧🇷</a> ·
+  <a href="README.tr.md">🇹🇷</a> ·
+  <a href="README.fr.md">🇫🇷</a>
 </p>
 
 **Codex Skill Forge** is a public-ready Codex skill and plugin package for creating better Codex skills from real briefs, examples, files, and constraints.
