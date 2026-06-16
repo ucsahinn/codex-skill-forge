@@ -8,6 +8,8 @@ Preview:
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/install.ps1 -DryRun
 ```
 
+`-DryRun` prints the source and target and writes no files.
+
 Install:
 
 ```powershell
@@ -48,6 +50,16 @@ The repo-local marketplace entry lives at:
 ```
 
 After the repository is public, plugin installation should be verified from a clean clone before documenting any one-line marketplace command as canonical.
+
+## Install Smoke Test
+
+The repo validation path includes an isolated install smoke test:
+
+```powershell
+npm run validate:install
+```
+
+This creates a temporary Codex home under the system temp directory, copies the skill there, verifies overwrite refusal and `-Force` backup behavior, then removes only that temporary tree.
 
 ## Skills CLI
 

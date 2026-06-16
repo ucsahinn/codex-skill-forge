@@ -1,6 +1,6 @@
 # Sources
 
-Checked on 2026-06-14.
+Checked on 2026-06-16.
 
 | Source | Type | Confidence | Supports | Outdated Risk |
 | --- | --- | --- | --- | --- |

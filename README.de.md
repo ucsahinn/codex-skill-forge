@@ -14,7 +14,7 @@
 >
 > Kanonische englische README: [README.md](README.md)
 
-Public Codex skill and plugin toolkit for creating, validating and packaging high-quality Codex skills.
+Öffentliches Codex-Skill- und Plugin-Toolkit zum Erstellen, Validieren und Paketieren hochwertiger Codex-Skills.
 
 Beginnen Sie mit der kanonischen README, wenn Sie die aktuellste englische Beschreibung brauchen. Verwenden Sie diese Seite, wenn Sie den gleichen Vertrag auf Deutsch lesen wollen.
 
@@ -22,32 +22,32 @@ Beginnen Sie mit der kanonischen README, wenn Sie die aktuellste englische Besch
 
 |Bereich | Details|
 |--- | ---|
-|Status | Public repository: ucsahinn/ai-skill-create|
+|Status | Öffentliches Repository: ucsahinn/ai-skill-create|
 |Wahrheit | [Kanonische englische README](README.md)|
-|Benutzer | Codex users creating reusable skills.; Maintainers preparing public skill repositories.|
-|Prüfung | SKILL.md frontmatter is valid and trigger description is front-loaded.; Plugin JSON and optional agents/openai.yaml parse cleanly.|
-|Sicherheit | Includes a plugin package under plugins/ai-skill-create.; Keeps the runtime SKILL.md lean and moves deep guidance into references.|
+|Benutzer | Codex-Nutzer, die wiederverwendbare Skills erstellen.; Maintainer, die öffentliche Skill-Repositories vorbereiten.|
+|Prüfung | Das SKILL.md-Frontmatter ist gültig und die Trigger-Beschreibung steht vorne.; Plugin JSON und optionales agents/openai.yaml werden sauber geparst.|
+|Sicherheit | Enthält ein Plugin-Paket unter plugins/ai-skill-create.; Hält das Runtime-SKILL.md knapp und verschiebt tiefe Anleitung nach references.|
 
 ## Was dieses Repository ist
 
-- A public-ready Codex skill that helps create other Codex skills.
-- A plugin-compatible repo with skill, references, scripts, templates and docs.
-- A validation harness for skill anatomy, progressive disclosure, safe generation and install checks.
-- A maintainer reference for packaging a skill so other users can inspect and install it.
+- Ein öffentlich nutzbarer Codex-Skill, der beim Erstellen anderer Codex-Skills hilft.
+- Ein plugin-kompatibles Repository mit Skill, References, Scripts, Templates und Docs.
+- Ein Validierungsrahmen für Skill-Anatomie, Progressive Disclosure, sichere Generierung und Installationschecks.
+- Eine Maintainer-Referenz zum Paketieren eines Skills, damit andere Nutzer ihn prüfen und installieren können.
 
 ## Was es nicht ist
 
-- Not a place to store private prompts or customer source material.
-- Not a generic prompt dump without validation.
-- Not a substitute for current official Codex or Agent Skills documentation.
-- Not an installer that should run destructive cleanup.
+- Kein Ort zum Speichern privater Prompts oder Kunden-Quellmaterialien.
+- Kein generischer Prompt-Dump ohne Validierung.
+- Kein Ersatz für aktuelle offizielle Codex- oder Agent-Skills-Dokumentation.
+- Kein Installer, der destruktive Bereinigung ausführen soll.
 
 ## Für wen es gedacht ist
 
-- Codex users creating reusable skills.
-- Maintainers preparing public skill repositories.
-- Reviewers checking skill safety, triggerability and packaging quality.
-- Windows users who need PowerShell-friendly install and validation flows.
+- Codex-Nutzer, die wiederverwendbare Skills erstellen.
+- Maintainer, die öffentliche Skill-Repositories vorbereiten.
+- Reviewer, die Sicherheit, Triggerbarkeit und Paketierungsqualität prüfen.
+- Windows-Nutzer, die PowerShell-freundliche Installations- und Validierungsablaeufe brauchen.
 
 ## Schnellstart
 
@@ -59,31 +59,31 @@ Beginnen Sie mit der kanonischen README, wenn Sie die aktuellste englische Besch
 
 ## Entscheidungshilfe
 
-- Instruction-only skill -> keep SKILL.md concise and avoid scripts.
-- Repeated deterministic work -> add scripts and validate them.
-- Large reference material -> put it in references and route to it from SKILL.md.
-- Public install path needed -> package as plugin and document Skills CLI usage.
+- Reiner Anleitungs-Skill -> SKILL.md knapp halten und Scripts vermeiden.
+- Wiederholte deterministische Arbeit -> Scripts ergänzen und validieren.
+- Umfangreiches Referenzmaterial -> in references ablegen und aus SKILL.md dorthin routen.
+- Öffentlicher Installationspfad nötig -> als Plugin paketieren und Skills-CLI-Nutzung dokumentieren.
 
 ## Repository-Karte
 
 |Pfad | Warum es wichtig ist|
 |--- | ---|
-|[plugins/ai-skill-create/skills/ai-skill-create/SKILL.md](plugins/ai-skill-create/skills/ai-skill-create/SKILL.md) | the actual Codex skill entrypoint|
-|[plugins/ai-skill-create/skills/ai-skill-create/references/](plugins/ai-skill-create/skills/ai-skill-create/references/) | progressive-disclosure knowledge|
-|[plugins/ai-skill-create/skills/ai-skill-create/scripts/](plugins/ai-skill-create/skills/ai-skill-create/scripts/) | deterministic scaffold and validation helpers|
-|[templates/](templates/) | starter files for generated skills and plugins|
-|[tests/forward-prompts/](tests/forward-prompts/) | realistic prompts for forward testing|
-|[docs/](docs/) | install, validation, plugin and public repo guidance|
-|[scripts/](scripts/) | repo-level validation and install dry-run helpers|
+|[plugins/ai-skill-create/skills/ai-skill-create/SKILL.md](plugins/ai-skill-create/skills/ai-skill-create/SKILL.md) | eigentlicher Einstiegspunkt des Codex-Skills|
+|[plugins/ai-skill-create/skills/ai-skill-create/references/](plugins/ai-skill-create/skills/ai-skill-create/references/) | Wissen für Progressive Disclosure|
+|[plugins/ai-skill-create/skills/ai-skill-create/scripts/](plugins/ai-skill-create/skills/ai-skill-create/scripts/) | deterministische Scaffold- und Validierungshelfer|
+|[templates/](templates/) | Startdateien für generierte Skills und Plugins|
+|[tests/forward-prompts/](tests/forward-prompts/) | realistische Prompts für Forward Testing|
+|[docs/](docs/) | Installations-, Validierungs-, Plugin- und Public-Repo-Anleitung|
+|[scripts/](scripts/) | Repo-Validierung und Install-Dry-Run-Helfer|
 
 ## Arbeitsablauf
 
-1. Understand the requested skill from examples and user constraints.
-2. Ask only necessary clarifying questions.
-3. Choose skill name, folder layout, references, scripts and optional plugin packaging.
-4. Generate a lean SKILL.md plus supporting files.
-5. Run structure, link, script, manifest, install and secret checks.
-6. Forward-test generated skills with realistic prompts before publication.
+1. Den angeforderten Skill aus Beispielen und Nutzergrenzen verstehen.
+2. Nur notwendige Rueckfragen stellen.
+3. Skill-Name, Ordnerlayout, References, Scripts und optionales Plugin-Packaging wählen.
+4. Ein knappes SKILL.md plus unterstuetzende Dateien erzeugen.
+5. Struktur-, Link-, Script-, Manifest-, Installations- und Secret-Checks ausführen.
+6. Generierte Skills vor der Veröffentlichung mit realistischen Prompts forward-testen.
 
 ## Befehle und Prüfung
 
@@ -99,43 +99,43 @@ gitleaks dir . --no-banner --redact
 
 ## Validierungs-Checkliste
 
-- SKILL.md frontmatter is valid and trigger description is front-loaded.
-- Plugin JSON and optional agents/openai.yaml parse cleanly.
-- References and scripts are linked only when needed.
-- Forward prompts have expected results recorded.
-- No generated skill contains secrets, local-only paths or private source text.
+- Das SKILL.md-Frontmatter ist gültig und die Trigger-Beschreibung steht vorne.
+- Plugin JSON und optionales agents/openai.yaml werden sauber geparst.
+- References und Scripts werden nur verlinkt, wenn sie gebraucht werden.
+- Forward Prompts haben erwartete Ergebnisse dokumentiert.
+- Kein generierter Skill enthält Secrets, lokale Pfade oder privaten Quelltext.
 
 ## Sicherheitsgrenze
 
-- Includes a plugin package under plugins/ai-skill-create.
-- Keeps the runtime SKILL.md lean and moves deep guidance into references.
-- Ships validation scripts for structure, frontmatter, plugin manifests, marketplace metadata, scripts and links.
-- Includes forward-test prompts so generated skills can be checked against realistic requests.
+- Enthält ein Plugin-Paket unter plugins/ai-skill-create.
+- Hält das Runtime-SKILL.md knapp und verschiebt tiefe Anleitung nach references.
+- Liefert Validierungsscripts für Struktur, Frontmatter, Plugin-Manifeste, Marketplace-Metadaten, Scripts und Links.
+- Enthält Forward-Test-Prompts, damit generierte Skills gegen realistische Anfragen geprüft werden können.
 
-Public-safe rule: do not add secrets, tokens, cookies, private keys, private prompts, customer data, local-only auth files, generated logs, archives or build outputs unless the canonical README explicitly says they belong in the public repo.
+Public-safe-Regel: Keine Secrets, Tokens, Cookies, privaten Schlüssel, privaten Prompts, Kundendaten, lokalen Auth-Dateien, generierten Logs, Archive oder Build-Outputs hinzufügen, außer die kanonische README sagt explizit, dass sie ins öffentliche Repo gehören.
 
 ## Release- und Publikationshygiene
 
-- Use docs/PUBLIC_REPO_CHECKLIST.md and PUBLISHING_CHECKLIST.md before any release.
-- Commit only reviewed source, docs, templates and validation scripts.
-- Do not publish marketplace metadata until the install path is real and tested.
-- Verify remote HEAD and GitHub Actions after push.
+- docs/PUBLIC_REPO_CHECKLIST.md und PUBLISHING_CHECKLIST.md vor jedem Release verwenden.
+- Nur geprüften Quellcode, Docs, Templates und Validierungsscripts committen.
+- Marketplace-Metadaten erst veröffentlichen, wenn der Installationspfad real und getestet ist.
+- Remote HEAD und GitHub Actions nach dem Push verifizieren.
 
 ## Wartung
 
-- Keep this localized README aligned with README.md when the repo contract changes.
-- Prefer factual repo links over marketing claims.
-- Do not invent install commands, metrics, users, releases or support promises.
-- If a command is version-sensitive, re-check it before documenting it.
-- When a localized file cannot be updated fully, leave a clear note instead of a partial translation.
+- Diese lokalisierte README mit README.md synchron halten, wenn sich der Repo-Vertrag ändert.
+- Faktische Repo-Links Marketing-Aussagen vorziehen.
+- Keine Installationsbefehle, Metriken, Nutzer, Releases oder Support-Versprechen erfinden.
+- Versionssensitive Befehle vor der Dokumentation erneut prüfen.
+- Wenn eine lokalisierte Datei nicht vollständig aktualisiert werden kann, eine klare Notiz statt einer Teilübersetzung hinterlassen.
 
 ## Beitragspfad
 
-- Open a focused change against the smallest set of files.
-- Read AGENTS.md or CONTRIBUTING.md when present before editing.
-- Run the repo validation commands listed above.
-- Review staged diffs explicitly before commit.
-- Use security disclosure paths instead of public issues for sensitive reports.
+- Eine fokussierte Änderung am kleinsten sinnvollen Dateisatz öffnen.
+- AGENTS.md oder CONTRIBUTING.md vor dem Editieren lesen, wenn vorhanden.
+- Die oben genannten Repo-Validierungsbefehle ausführen.
+- Gestagte Diffs vor dem Commit explizit prüfen.
+- Für sensible Meldungen Security-Disclosure-Wege statt öffentlicher Issues nutzen.
 
 ## Definition von fertig
 
@@ -143,20 +143,20 @@ Fertig bedeutet: Inhalt ist lokal vollständig, Links funktionieren, Sicherheits
 
 |Empfehlung | Warum es wichtig ist|
 |--- | ---|
-|Content | Public Codex skill and plugin toolkit for creating, validating and packaging high-quality Codex skills.|
-|Links | All referenced local files must exist and resolve from the repository root.|
-|Security | No generated skill contains secrets, local-only paths or private source text.|
-|Verification | Prüfen Sie Struktur, Links, Markdown, Secrets, relevante Skripte und Remote-HEAD, bevor Sie eine öffentliche Aussage machen.|
-|Remote | After push, compare local HEAD with origin/main and GitHub remote HEAD.|
+|Inhalt | Öffentliches Codex-Skill- und Plugin-Toolkit zum Erstellen, Validieren und Paketieren hochwertiger Codex-Skills.|
+|Links | Alle referenzierten lokalen Dateien müssen existieren und von der Repository-Wurzel aus auflösbar sein.|
+|Sicherheit | Kein generierter Skill enthält Secrets, lokale Pfade oder privaten Quelltext.|
+|Verifikation | Struktur, Links, Markdown, Secrets, relevante Skripte und Remote-HEAD prüfen, bevor eine öffentliche Aussage gemacht wird.|
+|Remote | Nach dem Push lokalen HEAD mit origin/main und GitHub remote HEAD vergleichen.|
 
 ## Wichtige Links
 
 |Pfad | Warum es wichtig ist|
 |--- | ---|
-|[Canonical README](README.md) | README.md|
-|[Install docs](docs/INSTALL.md) | docs/INSTALL.md|
-|[Validation docs](docs/VALIDATION.md) | docs/VALIDATION.md|
-|[Skill structure](docs/SKILL_STRUCTURE.md) | docs/SKILL_STRUCTURE.md|
-|[Plugin and marketplace](docs/PLUGIN_AND_MARKETPLACE.md) | docs/PLUGIN_AND_MARKETPLACE.md|
-|[Threat model](THREAT_MODEL.md) | THREAT_MODEL.md|
-|[Security policy](SECURITY.md) | SECURITY.md|
+|[Kanonische README](README.md) | README.md|
+|[Installationsdocs](docs/INSTALL.md) | docs/INSTALL.md|
+|[Validierungsdocs](docs/VALIDATION.md) | docs/VALIDATION.md|
+|[Skill-Struktur](docs/SKILL_STRUCTURE.md) | docs/SKILL_STRUCTURE.md|
+|[Plugin und Marketplace](docs/PLUGIN_AND_MARKETPLACE.md) | docs/PLUGIN_AND_MARKETPLACE.md|
+|[Threat Model](THREAT_MODEL.md) | THREAT_MODEL.md|
+|[Sicherheitsrichtlinie](SECURITY.md) | SECURITY.md|

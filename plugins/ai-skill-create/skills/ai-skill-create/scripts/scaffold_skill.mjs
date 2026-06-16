@@ -12,6 +12,9 @@ const force = Boolean(args.force);
 if (!name) {
   fail("Pass --name <skill-name> using lowercase kebab-case words.");
 }
+if (name.length > 63) {
+  fail("Normalized skill name exceeds 63 characters. Choose a shorter, specific name.");
+}
 
 const target = path.resolve(outDir, name);
 if (!isInside(outDir, target)) {
@@ -72,8 +75,7 @@ function normalizeName(value) {
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/-+/g, "-")
-    .replace(/^-|-$/g, "")
-    .slice(0, 63);
+    .replace(/^-|-$/g, "");
 }
 
 function isInside(parent, child) {

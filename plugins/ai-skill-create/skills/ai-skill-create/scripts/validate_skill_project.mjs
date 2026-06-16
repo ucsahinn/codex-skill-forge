@@ -23,7 +23,7 @@ if (!fs.existsSync(skillFile)) {
     if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(name)) errors.push("Skill name must be lowercase kebab-case.");
     if (name.length > 63) errors.push("Skill name must be under 64 characters.");
     if (path.basename(skillRoot) !== name) errors.push("Skill folder name must match frontmatter name.");
-    if (description.length < 40) errors.push("Description is too short to route reliably.");
+    if (description.length < 80) errors.push("Description is too short to route reliably.");
     if (description.length > 1024) errors.push("Description must be 1024 characters or fewer.");
     if (frontmatter.body.split(/\r?\n/).length > 500) errors.push("SKILL.md body should stay under 500 lines.");
     validateReferencedFiles(skillRoot, frontmatter.body, errors);

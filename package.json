@@ -22,6 +22,7 @@
     "validate:marketplace": "node scripts/validate-marketplace.mjs .agents/plugins/marketplace.json",
     "validate:links": "node scripts/validate-markdown-links.mjs",
     "validate:syntax": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/check-script-syntax.ps1",
+    "validate:contracts": "node scripts/test-validator-contracts.mjs",
     "validate:install": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/test-install-dry-run.ps1",
     "validate:secrets": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/security-scan.ps1"
   },

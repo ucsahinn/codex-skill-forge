@@ -5,11 +5,14 @@ const name = input
   .toLowerCase()
   .replace(/[^a-z0-9]+/g, "-")
   .replace(/-+/g, "-")
-  .replace(/^-|-$/g, "")
-  .slice(0, 63);
+  .replace(/^-|-$/g, "");
 
 if (!name) {
   console.error("ERROR: provide a proposed skill name.");
+  process.exit(1);
+}
+if (name.length > 63) {
+  console.error("ERROR: normalized skill name exceeds 63 characters.");
   process.exit(1);
 }
 
