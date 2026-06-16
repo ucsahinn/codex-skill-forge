@@ -1,4 +1,4 @@
-# 🛠️ AI Skill Create
+# <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f6e0.svg" alt="" aria-hidden="true" width="20"> AI Skill Create
 
 <p align="center">
   <img src="assets/icon.svg" alt="AI Skill Create ikonu" width="120" />
@@ -20,17 +20,17 @@
 
 Amaç basit: Codex bir skill oluştururken sadece şablon doldurmasın; skill’i anlasın, doğru yapıyı seçsin, doğrulasın, forward-test etsin, güvenli paketlesin ve başkalarının rahatça kurabileceği hale getirsin.
 
-## ✨ Ne Sağlar?
+## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/2728.svg" alt="" aria-hidden="true" width="20"> Ne Sağlar?
 
-- 🎯 güçlü ve tetiklenebilir `SKILL.md` açıklamaları
-- 🧭 kısa ana workflow ve ayrı referans dosyaları
-- ⚙️ gerekli yerde deterministic helper scriptleri
-- 🧪 validation ve forward-test promptları
-- 📦 plugin ve marketplace metadata
-- 🪟 Windows-first install ve dry-run scriptleri
-- 🔐 public repo için secret scan ve güvenlik kontrolleri
+- <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f3af.svg" alt="" aria-hidden="true" width="20"> güçlü ve tetiklenebilir `SKILL.md` açıklamaları
+- <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f9ed.svg" alt="" aria-hidden="true" width="20"> kısa ana workflow ve ayrı referans dosyaları
+- <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/2699.svg" alt="" aria-hidden="true" width="20"> gerekli yerde deterministic helper scriptleri
+- <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f9ea.svg" alt="" aria-hidden="true" width="20"> validation ve forward-test promptları
+- <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4e6.svg" alt="" aria-hidden="true" width="20"> plugin ve marketplace metadata
+- <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1fa9f.svg" alt="" aria-hidden="true" width="20"> Windows-first install ve dry-run scriptleri
+- <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f510.svg" alt="" aria-hidden="true" width="20"> public repo için secret scan ve güvenlik kontrolleri
 
-## 🚀 Hızlı Başlangıç
+## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f680.svg" alt="" aria-hidden="true" width="20"> Hızlı Başlangıç
 
 Repoyu klonla:
 
@@ -57,7 +57,7 @@ Sonra yeni bir Codex thread’i açıp şöyle çağır:
 Use $ai-skill-create to create a new Codex skill from this brief.
 ```
 
-## 🧩 Plugin Yapısı
+## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f9e9.svg" alt="" aria-hidden="true" width="20"> Plugin Yapısı
 
 Paket self-contained çalışır:
 
@@ -74,7 +74,7 @@ plugins/ai-skill-create/
 
 Repo-local marketplace dosyası: [.agents/plugins/marketplace.json](.agents/plugins/marketplace.json)
 
-## ✅ Doğrulama
+## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/2705.svg" alt="" aria-hidden="true" width="20"> Doğrulama
 
 Tüm yerel kontrol zinciri:
 
@@ -94,7 +94,7 @@ Bu kontrol şunları doğrular:
 - install dry-run
 - Gitleaks secret scan
 
-## 🧠 Nasıl Çalışır?
+## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f9e0.svg" alt="" aria-hidden="true" width="20"> Nasıl Çalışır?
 
 `$ai-skill-create` çağrıldığında Codex’i şu akıştan geçirir:
 
@@ -107,7 +107,7 @@ Bu kontrol şunları doğrular:
 7. gerçekçi forward-test promptlarıyla dene
 8. public repo, install ve release kapılarını hazırla
 
-## 📚 Dokümanlar
+## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4da.svg" alt="" aria-hidden="true" width="20"> Dokümanlar
 
 - [Install Guide](docs/INSTALL.md)
 - [Usage Guide](docs/USAGE.md)
@@ -120,7 +120,7 @@ Bu kontrol şunları doğrular:
 - [GitHub Settings](docs/GITHUB_SETTINGS.md)
 - [Sources](docs/SOURCES.md)
 
-## 🔐 Güvenlik Modeli
+## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f510.svg" alt="" aria-hidden="true" width="20"> Güvenlik Modeli
 
 Skill üreten bir araç, agent davranışını etkileyebilir. Bu yüzden brief, örnek, web sayfası, MCP çıktısı, GitHub issue ve üretilen metinler güvenilmeyen input kabul edilir.
 
@@ -135,6 +135,6 @@ Bu repo özellikle şunlardan kaçınır:
 
 Detaylar: [SAFE_GENERATION.md](SAFE_GENERATION.md), [THREAT_MODEL.md](THREAT_MODEL.md), [SECURITY.md](SECURITY.md).
 
-## 📄 Lisans
+## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4c4.svg" alt="" aria-hidden="true" width="20"> Lisans
 
 MIT. Bkz. [LICENSE](LICENSE).

@@ -1,4 +1,4 @@
-# 🛠️ AI Skill Create
+# <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f6e0.svg" alt="" aria-hidden="true" width="20"> AI Skill Create
 
 <p align="center">
   <img src="assets/icon.svg" alt="AI Skill Create icon" width="120" />
@@ -34,21 +34,21 @@
 
 **AI Skill Create** is a public-ready Codex skill and plugin package for creating better Codex skills from real briefs, examples, files, and constraints.
 
-> ⭐ Build the skill, validate the structure, dry-run the install path, then package it for other Codex users.
+> <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/2b50.svg" alt="" aria-hidden="true" width="20"> Build the skill, validate the structure, dry-run the install path, then package it for other Codex users.
 
 It helps Codex design, scaffold, validate, forward-test, document, and package skills that are triggerable, concise, safe, progressive-disclosure friendly, and easy to install.
 
-## ✨ What It Builds
+## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/2728.svg" alt="" aria-hidden="true" width="20"> What It Builds
 
-- 🎯 strong `SKILL.md` trigger descriptions
-- 🧭 lean workflows with one-level references
-- ⚙️ deterministic helper scripts when reliability matters
-- 🧪 validation and forward-test prompts
-- 📦 plugin and marketplace metadata
-- 🪟 Windows-first install and dry-run scripts
-- 🔐 public repo safety checks and secret scanning
+- <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f3af.svg" alt="" aria-hidden="true" width="20"> strong `SKILL.md` trigger descriptions
+- <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f9ed.svg" alt="" aria-hidden="true" width="20"> lean workflows with one-level references
+- <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/2699.svg" alt="" aria-hidden="true" width="20"> deterministic helper scripts when reliability matters
+- <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f9ea.svg" alt="" aria-hidden="true" width="20"> validation and forward-test prompts
+- <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4e6.svg" alt="" aria-hidden="true" width="20"> plugin and marketplace metadata
+- <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1fa9f.svg" alt="" aria-hidden="true" width="20"> Windows-first install and dry-run scripts
+- <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f510.svg" alt="" aria-hidden="true" width="20"> public repo safety checks and secret scanning
 
-## 🚀 Quick Start
+## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f680.svg" alt="" aria-hidden="true" width="20"> Quick Start
 
 Clone the repo:
 
@@ -75,7 +75,7 @@ Then start a new Codex thread and invoke:
 Use $ai-skill-create to create a new Codex skill from this brief.
 ```
 
-## 🧩 Plugin Layout
+## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f9e9.svg" alt="" aria-hidden="true" width="20"> Plugin Layout
 
 The plugin is self-contained:
 
@@ -92,7 +92,7 @@ plugins/ai-skill-create/
 
 The repo-local marketplace entry lives at [.agents/plugins/marketplace.json](.agents/plugins/marketplace.json).
 
-## ✅ Validate Everything
+## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/2705.svg" alt="" aria-hidden="true" width="20"> Validate Everything
 
 Run the full local gate:
 
@@ -112,7 +112,7 @@ The validation chain checks:
 - install dry-run
 - Gitleaks secret scan
 
-## 🧠 Skill Workflow
+## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f9e0.svg" alt="" aria-hidden="true" width="20"> Skill Workflow
 
 When invoked, `$ai-skill-create` guides Codex through:
 
@@ -125,7 +125,7 @@ When invoked, `$ai-skill-create` guides Codex through:
 7. forward-testing with realistic prompts
 8. preparing public repo docs and release gates
 
-## 📚 Documentation
+## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4da.svg" alt="" aria-hidden="true" width="20"> Documentation
 
 - [Install Guide](docs/INSTALL.md)
 - [Usage Guide](docs/USAGE.md)
@@ -138,7 +138,7 @@ When invoked, `$ai-skill-create` guides Codex through:
 - [GitHub Settings](docs/GITHUB_SETTINGS.md)
 - [Sources](docs/SOURCES.md)
 
-## 🔐 Safety Model
+## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f510.svg" alt="" aria-hidden="true" width="20"> Safety Model
 
 Generated skills can affect agent behavior. This repo treats briefs, examples, web pages, MCP output, GitHub issues, and generated text as untrusted input.
 
@@ -153,10 +153,10 @@ The project avoids:
 
 See [SAFE_GENERATION.md](SAFE_GENERATION.md), [THREAT_MODEL.md](THREAT_MODEL.md), and [SECURITY.md](SECURITY.md).
 
-## 🌍 Turkish Docs
+## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f30d.svg" alt="" aria-hidden="true" width="20"> Turkish Docs
 
 Turkish documentation is available in [README.tr.md](README.tr.md).
 
-## 📄 License
+## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4c4.svg" alt="" aria-hidden="true" width="20"> License
 
 MIT. See [LICENSE](LICENSE).
