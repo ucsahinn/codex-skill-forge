@@ -3,7 +3,7 @@
 Invoke the skill in a new Codex thread:
 
 ```text
-Use $codex-skill-forge to create a Codex skill from this brief.
+Use $ai-skill-create to create a Codex skill from this brief.
 ```
 
 ## Good Brief Inputs
@@ -20,19 +20,19 @@ Provide:
 ## Common Modes
 
 ```text
-Use $codex-skill-forge to design a new skill. Plan only first.
+Use $ai-skill-create to design a new skill. Plan only first.
 ```
 
 ```text
-Use $codex-skill-forge to improve this existing SKILL.md without bloating it.
+Use $ai-skill-create to improve this existing SKILL.md without bloating it.
 ```
 
 ```text
-Use $codex-skill-forge to package this skill as a plugin-ready public repo.
+Use $ai-skill-create to package this skill as a plugin-ready public repo.
 ```
 
 ```text
-Use $codex-skill-forge to validate this skill folder and return actionable failures.
+Use $ai-skill-create to validate this skill folder and return actionable failures.
 ```
 
 ## Expected Output

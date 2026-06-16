@@ -1,4 +1,4 @@
-title = "codex-skill-forge gitleaks policy"
+title = "ai-skill-create gitleaks policy"
 
 [allowlist]
 description = "Allow inert documentation placeholders only."

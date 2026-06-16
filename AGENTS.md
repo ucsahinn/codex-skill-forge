@@ -2,11 +2,11 @@
 
 ## Purpose
 
-This repository ships `codex-skill-forge`, a public Codex skill and plugin package for creating, validating, forward-testing, documenting, and packaging Codex skills.
+This repository ships `ai-skill-create`, a public Codex skill and plugin package for creating, validating, forward-testing, documenting, and packaging Codex skills.
 
 ## Working Rules
 
-- Keep the plugin package self-contained under `plugins/codex-skill-forge/`.
+- Keep the plugin package self-contained under `plugins/ai-skill-create/`.
 - Keep public docs at the repository root or under `docs/`.
 - Do not put README, install docs, changelogs, or release notes inside the runtime skill folder.
 - Prefer small, explicit changes over broad rewrites.

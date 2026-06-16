@@ -1,13 +1,13 @@
 {
-  "name": "codex-skill-forge",
+  "name": "ai-skill-create",
   "version": "0.1.0",
   "description": "Create, validate, forward-test, and package high-quality Codex skills.",
   "author": {
     "name": "Ulas Sahin",
     "url": "https://github.com/ucsahinn"
   },
-  "homepage": "https://github.com/ucsahinn/codex-skill-forge#readme",
-  "repository": "https://github.com/ucsahinn/codex-skill-forge",
+  "homepage": "https://github.com/ucsahinn/ai-skill-create#readme",
+  "repository": "https://github.com/ucsahinn/ai-skill-create",
   "license": "MIT",
   "keywords": [
     "codex",
@@ -18,7 +18,7 @@
   ],
   "skills": "./skills/",
   "interface": {
-    "displayName": "Codex Skill Forge",
+    "displayName": "AI Skill Create",
     "shortDescription": "Build reliable Codex skills.",
     "longDescription": "A public-ready Codex skill and plugin that helps agents design, scaffold, validate, forward-test, and document new Codex skills from user briefs and examples.",
     "developerName": "Ulas Sahin",
@@ -28,12 +28,12 @@
       "Validation",
       "Plugin packaging"
     ],
-    "websiteURL": "https://github.com/ucsahinn/codex-skill-forge",
+    "websiteURL": "https://github.com/ucsahinn/ai-skill-create",
     "defaultPrompt": [
-      "Use $codex-skill-forge to design a new Codex skill from this brief.",
-      "Use $codex-skill-forge to validate and improve this skill package.",
-      "Use $codex-skill-forge to package this skill as a plugin-ready repo."
+      "Use $ai-skill-create to design a new Codex skill from this brief.",
+      "Use $ai-skill-create to validate and improve this skill package.",
+      "Use $ai-skill-create to package this skill as a plugin-ready repo."
     ],
-    "brandColor": "#2563EB"
+    "brandColor": "#0F766E"
   }
 }

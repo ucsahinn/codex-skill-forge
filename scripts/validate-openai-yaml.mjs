@@ -2,7 +2,7 @@
 import fs from "node:fs";
 import path from "node:path";
 
-const target = process.argv[2] ? path.resolve(process.argv[2]) : path.resolve("plugins/codex-skill-forge/skills/codex-skill-forge/agents/openai.yaml");
+const target = process.argv[2] ? path.resolve(process.argv[2]) : path.resolve("plugins/ai-skill-create/skills/ai-skill-create/agents/openai.yaml");
 const errors = [];
 
 if (!fs.existsSync(target)) {
@@ -18,7 +18,7 @@ if (!fs.existsSync(target)) {
   if (!display) errors.push("Missing interface.display_name.");
   if (!short) errors.push("Missing interface.short_description.");
   if (!prompt) errors.push("Missing interface.default_prompt.");
-  if (!prompt.includes("$codex-skill-forge")) errors.push("default_prompt must mention $codex-skill-forge.");
+  if (!prompt.includes("$ai-skill-create")) errors.push("default_prompt must mention $ai-skill-create.");
   if (short.length < 20 || short.length > 64) errors.push("short_description should be 20-64 characters.");
   if (parsed.policy?.allow_implicit_invocation !== "true" && parsed.policy?.allow_implicit_invocation !== "false") {
     errors.push("policy.allow_implicit_invocation must be true or false.");

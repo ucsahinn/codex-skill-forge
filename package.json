@@ -1,5 +1,5 @@
 {
-  "name": "codex-skill-forge",
+  "name": "ai-skill-create",
   "version": "0.1.0",
   "private": true,
   "description": "Public Codex skill and plugin toolkit for creating, validating, and packaging high-quality Codex skills.",
@@ -7,7 +7,7 @@
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ucsahinn/codex-skill-forge.git"
+    "url": "https://github.com/ucsahinn/ai-skill-create.git"
   },
   "engines": {
     "node": ">=18"
@@ -16,9 +16,9 @@
     "check": "npm run validate",
     "validate": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/validate-all.ps1",
     "validate:structure": "node scripts/validate-structure.mjs",
-    "validate:skill": "node scripts/validate-skill-frontmatter.mjs plugins/codex-skill-forge/skills/codex-skill-forge/SKILL.md",
-    "validate:openai-yaml": "node scripts/validate-openai-yaml.mjs plugins/codex-skill-forge/skills/codex-skill-forge/agents/openai.yaml",
-    "validate:plugin": "node scripts/validate-plugin-json.mjs plugins/codex-skill-forge/.codex-plugin/plugin.json",
+    "validate:skill": "node scripts/validate-skill-frontmatter.mjs plugins/ai-skill-create/skills/ai-skill-create/SKILL.md",
+    "validate:openai-yaml": "node scripts/validate-openai-yaml.mjs plugins/ai-skill-create/skills/ai-skill-create/agents/openai.yaml",
+    "validate:plugin": "node scripts/validate-plugin-json.mjs plugins/ai-skill-create/.codex-plugin/plugin.json",
     "validate:marketplace": "node scripts/validate-marketplace.mjs .agents/plugins/marketplace.json",
     "validate:links": "node scripts/validate-markdown-links.mjs",
     "validate:syntax": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/check-script-syntax.ps1",
@@ -27,6 +27,9 @@
   },
   "keywords": [
     "codex",
+    "ai-skill-create",
+    "ai-skills",
+    "agent-skills",
     "skills",
     "plugins",
     "prompt-engineering",

@@ -1,6 +1,6 @@
 # Safe Generation
 
-Codex Skill Forge generates skill packages that can affect future agent behavior. Generated output must be safe to inspect, install, and publish.
+AI Skill Create generates skill packages that can affect future agent behavior. Generated output must be safe to inspect, install, and publish.
 
 ## Rules
 

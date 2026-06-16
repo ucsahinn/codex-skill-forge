@@ -1,6 +1,0 @@
-interface:
-  display_name: "Codex Skill Forge"
-  short_description: "Build reliable Codex skills."
-  default_prompt: "Use $codex-skill-forge to create, validate, and package a new Codex skill from this brief."
-policy:
-  allow_implicit_invocation: true

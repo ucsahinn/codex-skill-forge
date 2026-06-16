@@ -34,9 +34,9 @@ jobs:
       - name: Structure and metadata
         run: |
           node scripts/validate-structure.mjs
-          node scripts/validate-skill-frontmatter.mjs plugins/codex-skill-forge/skills/codex-skill-forge/SKILL.md
-          node scripts/validate-openai-yaml.mjs plugins/codex-skill-forge/skills/codex-skill-forge/agents/openai.yaml
-          node scripts/validate-plugin-json.mjs plugins/codex-skill-forge/.codex-plugin/plugin.json
+          node scripts/validate-skill-frontmatter.mjs plugins/ai-skill-create/skills/ai-skill-create/SKILL.md
+          node scripts/validate-openai-yaml.mjs plugins/ai-skill-create/skills/ai-skill-create/agents/openai.yaml
+          node scripts/validate-plugin-json.mjs plugins/ai-skill-create/.codex-plugin/plugin.json
           node scripts/validate-marketplace.mjs .agents/plugins/marketplace.json
           node scripts/validate-markdown-links.mjs
       - name: Script syntax
@@ -49,5 +49,5 @@ jobs:
         if: runner.os == 'Linux'
         shell: bash
         run: |
-          sh scripts/install.sh --destination-root "$RUNNER_TEMP/codex-skill-forge-install" --allow-custom-destination --yes
-          test -f "$RUNNER_TEMP/codex-skill-forge-install/skills/codex-skill-forge/SKILL.md"
+          sh scripts/install.sh --destination-root "$RUNNER_TEMP/ai-skill-create-install" --allow-custom-destination --yes
+          test -f "$RUNNER_TEMP/ai-skill-create-install/skills/ai-skill-create/SKILL.md"

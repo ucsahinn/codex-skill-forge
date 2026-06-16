@@ -2,7 +2,7 @@
 import fs from "node:fs";
 import path from "node:path";
 
-const target = process.argv[2] ? path.resolve(process.argv[2]) : path.resolve("plugins/codex-skill-forge/skills/codex-skill-forge/SKILL.md");
+const target = process.argv[2] ? path.resolve(process.argv[2]) : path.resolve("plugins/ai-skill-create/skills/ai-skill-create/SKILL.md");
 const errors = [];
 
 if (!fs.existsSync(target)) {

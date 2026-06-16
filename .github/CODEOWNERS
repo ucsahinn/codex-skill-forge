@@ -1,7 +1,7 @@
 # Security-sensitive files need explicit review.
 /.github/ @ucsahinn
 /scripts/ @ucsahinn
-/plugins/codex-skill-forge/.codex-plugin/plugin.json @ucsahinn
+/plugins/ai-skill-create/.codex-plugin/plugin.json @ucsahinn
 /.agents/plugins/marketplace.json @ucsahinn
 /SAFE_GENERATION.md @ucsahinn
 /THREAT_MODEL.md @ucsahinn

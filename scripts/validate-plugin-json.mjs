@@ -2,7 +2,7 @@
 import fs from "node:fs";
 import path from "node:path";
 
-const target = process.argv[2] ? path.resolve(process.argv[2]) : path.resolve("plugins/codex-skill-forge/.codex-plugin/plugin.json");
+const target = process.argv[2] ? path.resolve(process.argv[2]) : path.resolve("plugins/ai-skill-create/.codex-plugin/plugin.json");
 const errors = [];
 
 if (!fs.existsSync(target)) {
@@ -11,7 +11,7 @@ if (!fs.existsSync(target)) {
   const pluginRoot = path.dirname(path.dirname(target));
   const data = parseJson(target, errors);
   if (data) {
-    if (data.name !== "codex-skill-forge") errors.push("plugin name must be codex-skill-forge.");
+    if (data.name !== "ai-skill-create") errors.push("plugin name must be ai-skill-create.");
     if (!/^\d+\.\d+\.\d+(?:[-+][0-9A-Za-z.-]+)?$/.test(data.version || "")) errors.push("plugin version must be semver.");
     for (const field of ["description", "repository", "license", "skills"]) {
       if (!data[field]) errors.push(`plugin.json missing ${field}.`);

@@ -1,17 +1,23 @@
-# 🛠️ Codex Skill Forge
+# 🛠️ AI Skill Create
 
 <p align="center">
-  <a href="https://github.com/ucsahinn/codex-skill-forge/actions/workflows/ci.yml">
-    <img src="https://img.shields.io/github/actions/workflow/status/ucsahinn/codex-skill-forge/ci.yml?branch=main&amp;style=for-the-badge&amp;label=CI&amp;logo=githubactions&amp;logoColor=white" alt="Codex Skill Forge CI status" />
+  <img src="assets/icon.svg" alt="AI Skill Create icon" width="120" />
+  <br />
+  <img src="assets/banner.svg" alt="AI Skill Create banner showing brief intake, skill design, validation, and plugin packaging" width="100%" />
+</p>
+
+<p align="center">
+  <a href="https://github.com/ucsahinn/ai-skill-create/actions/workflows/ci.yml">
+    <img src="https://img.shields.io/github/actions/workflow/status/ucsahinn/ai-skill-create/ci.yml?branch=main&amp;style=for-the-badge&amp;label=CI&amp;logo=githubactions&amp;logoColor=white" alt="AI Skill Create CI status" />
   </a>
-  <a href="https://github.com/ucsahinn/codex-skill-forge/actions/workflows/secret-scan.yml">
-    <img src="https://img.shields.io/github/actions/workflow/status/ucsahinn/codex-skill-forge/secret-scan.yml?branch=main&amp;style=for-the-badge&amp;label=Secret%20Scan&amp;logo=gitguardian&amp;logoColor=white" alt="Codex Skill Forge secret scan status" />
+  <a href="https://github.com/ucsahinn/ai-skill-create/actions/workflows/secret-scan.yml">
+    <img src="https://img.shields.io/github/actions/workflow/status/ucsahinn/ai-skill-create/secret-scan.yml?branch=main&amp;style=for-the-badge&amp;label=Secret%20Scan&amp;logo=gitguardian&amp;logoColor=white" alt="AI Skill Create secret scan status" />
   </a>
-  <a href="https://github.com/ucsahinn/codex-skill-forge/stargazers">
-    <img src="https://img.shields.io/github/stars/ucsahinn/codex-skill-forge?style=for-the-badge&amp;logo=github&amp;label=Stars&amp;color=f59e0b" alt="Codex Skill Forge GitHub stars" />
+  <a href="https://github.com/ucsahinn/ai-skill-create/stargazers">
+    <img src="https://img.shields.io/github/stars/ucsahinn/ai-skill-create?style=for-the-badge&amp;logo=github&amp;label=Stars&amp;color=f59e0b" alt="AI Skill Create GitHub stars" />
   </a>
-  <a href="https://github.com/ucsahinn/codex-skill-forge/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/ucsahinn/codex-skill-forge?style=for-the-badge&amp;color=111827" alt="Codex Skill Forge license" />
+  <a href="https://github.com/ucsahinn/ai-skill-create/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/ucsahinn/ai-skill-create?style=for-the-badge&amp;color=111827" alt="AI Skill Create license" />
   </a>
 </p>
 
@@ -25,7 +31,7 @@
   <a href="README.fr.md">🇫🇷</a>
 </p>
 
-**Codex Skill Forge** is a public-ready Codex skill and plugin package for creating better Codex skills from real briefs, examples, files, and constraints.
+**AI Skill Create** is a public-ready Codex skill and plugin package for creating better Codex skills from real briefs, examples, files, and constraints.
 
 > ⭐ Build the skill, validate the structure, dry-run the install path, then package it for other Codex users.
 
@@ -46,8 +52,8 @@ It helps Codex design, scaffold, validate, forward-test, document, and package s
 Clone the repo:
 
 ```powershell
-git clone https://github.com/ucsahinn/codex-skill-forge.git
-cd codex-skill-forge
+git clone https://github.com/ucsahinn/ai-skill-create.git
+cd ai-skill-create
 ```
 
 Preview the direct skill install:
@@ -65,7 +71,7 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/install.ps1 -Yes
 Then start a new Codex thread and invoke:
 
 ```text
-Use $codex-skill-forge to create a new Codex skill from this brief.
+Use $ai-skill-create to create a new Codex skill from this brief.
 ```
 
 ## 🧩 Plugin Layout
@@ -73,9 +79,9 @@ Use $codex-skill-forge to create a new Codex skill from this brief.
 The plugin is self-contained:
 
 ```text
-plugins/codex-skill-forge/
+plugins/ai-skill-create/
   .codex-plugin/plugin.json
-  skills/codex-skill-forge/
+  skills/ai-skill-create/
     SKILL.md
     agents/openai.yaml
     references/
@@ -107,7 +113,7 @@ The validation chain checks:
 
 ## 🧠 Skill Workflow
 
-When invoked, `$codex-skill-forge` guides Codex through:
+When invoked, `$ai-skill-create` guides Codex through:
 
 1. understanding concrete examples and user intent
 2. choosing instruction-only vs references/scripts/assets/plugin packaging
@@ -127,6 +133,8 @@ When invoked, `$codex-skill-forge` guides Codex through:
 - [Plugin And Marketplace](docs/PLUGIN_AND_MARKETPLACE.md)
 - [Windows Notes](docs/WINDOWS.md)
 - [Public Repo Checklist](docs/PUBLIC_REPO_CHECKLIST.md)
+- [SEO And Discoverability](docs/SEO.md)
+- [GitHub Settings](docs/GITHUB_SETTINGS.md)
 - [Sources](docs/SOURCES.md)
 
 ## 🔐 Safety Model

@@ -38,7 +38,7 @@ sh scripts/install.sh --yes
 The plugin package lives at:
 
 ```text
-plugins/codex-skill-forge
+plugins/ai-skill-create
 ```
 
 The repo-local marketplace entry lives at:
@@ -54,7 +54,7 @@ After the repository is public, plugin installation should be verified from a cl
 Skills CLI support should be verified against the installed CLI version before release notes call it canonical. The expected shape is:
 
 ```powershell
-npx.cmd skills add <source> --skill codex-skill-forge --agent codex --yes --global
+npx.cmd skills add <source> --skill ai-skill-create --agent codex --yes --global
 ```
 
 Use a temporary Codex home for dry-run style testing when possible.

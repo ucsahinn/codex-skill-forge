@@ -6,7 +6,7 @@ Use a direct skill when a user needs only reusable workflow instructions.
 
 Use a plugin when the skill should be installed, shared, surfaced in plugin UI, or bundled with additional Codex surfaces.
 
-Codex Skill Forge ships both:
+AI Skill Create ships both:
 
 - the skill as runtime workflow
 - the plugin as distribution wrapper
@@ -16,7 +16,7 @@ Codex Skill Forge ships both:
 Manifest path:
 
 ```text
-plugins/codex-skill-forge/.codex-plugin/plugin.json
+plugins/ai-skill-create/.codex-plugin/plugin.json
 ```
 
 It points to:
@@ -36,7 +36,7 @@ Marketplace path:
 The entry points to:
 
 ```json
-"path": "./plugins/codex-skill-forge"
+"path": "./plugins/ai-skill-create"
 ```
 
 ## Publication Rule
