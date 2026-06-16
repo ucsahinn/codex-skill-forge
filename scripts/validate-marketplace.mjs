@@ -13,11 +13,11 @@ if (!fs.existsSync(target)) {
     if (!data.name) errors.push("marketplace missing name.");
     if (!data.interface?.displayName) errors.push("marketplace missing interface.displayName.");
     if (!Array.isArray(data.plugins) || data.plugins.length === 0) errors.push("marketplace plugins must be a non-empty array.");
-    const entry = data.plugins?.find((item) => item.name === "codex-skill-forge");
-    if (!entry) errors.push("marketplace missing codex-skill-forge entry.");
+    const entry = data.plugins?.find((item) => item.name === "ai-skill-create");
+    if (!entry) errors.push("marketplace missing ai-skill-create entry.");
     if (entry) {
       if (entry.source?.source !== "local") errors.push("marketplace source.source must be local.");
-      if (entry.source?.path !== "./plugins/codex-skill-forge") errors.push("marketplace source.path must be ./plugins/codex-skill-forge.");
+      if (entry.source?.path !== "./plugins/ai-skill-create") errors.push("marketplace source.path must be ./plugins/ai-skill-create.");
       if (entry.policy?.installation !== "AVAILABLE") errors.push("marketplace policy.installation must be AVAILABLE.");
       if (entry.policy?.authentication !== "ON_INSTALL") errors.push("marketplace policy.authentication must be ON_INSTALL.");
       if (!entry.category) errors.push("marketplace entry missing category.");

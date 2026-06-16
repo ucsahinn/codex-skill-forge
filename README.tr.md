@@ -1,4 +1,10 @@
-# 🛠️ Codex Skill Forge
+# 🛠️ AI Skill Create
+
+<p align="center">
+  <img src="assets/icon.svg" alt="AI Skill Create ikonu" width="120" />
+  <br />
+  <img src="assets/banner.svg" alt="Brief alma, skill tasarımı, doğrulama ve plugin paketlemeyi gösteren AI Skill Create banner görseli" width="100%" />
+</p>
 
 <p align="center">
   <a href="README.de.md">🇩🇪 Deutsch</a> ·
@@ -9,7 +15,7 @@
   <a href="README.fr.md">🇫🇷 French</a>
 </p>
 
-**Codex Skill Forge**, gerçek brief, örnek, dosya ve talimatlardan daha iyi Codex skill’leri üretmek için hazırlanmış public-ready bir Codex skill ve plugin paketidir.
+**AI Skill Create**, gerçek brief, örnek, dosya ve talimatlardan daha iyi Codex skill’leri üretmek için hazırlanmış public-ready bir Codex skill ve plugin paketidir.
 
 Amaç basit: Codex bir skill oluştururken sadece şablon doldurmasın; skill’i anlasın, doğru yapıyı seçsin, doğrulasın, forward-test etsin, güvenli paketlesin ve başkalarının rahatça kurabileceği hale getirsin.
 
@@ -28,8 +34,8 @@ Amaç basit: Codex bir skill oluştururken sadece şablon doldurmasın; skill’
 Repoyu klonla:
 
 ```powershell
-git clone https://github.com/ucsahinn/codex-skill-forge.git
-cd codex-skill-forge
+git clone https://github.com/ucsahinn/ai-skill-create.git
+cd ai-skill-create
 ```
 
 Kurulumu önce dry-run ile gör:
@@ -47,7 +53,7 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/install.ps1 -Yes
 Sonra yeni bir Codex thread’i açıp şöyle çağır:
 
 ```text
-Use $codex-skill-forge to create a new Codex skill from this brief.
+Use $ai-skill-create to create a new Codex skill from this brief.
 ```
 
 ## 🧩 Plugin Yapısı
@@ -55,9 +61,9 @@ Use $codex-skill-forge to create a new Codex skill from this brief.
 Paket self-contained çalışır:
 
 ```text
-plugins/codex-skill-forge/
+plugins/ai-skill-create/
   .codex-plugin/plugin.json
-  skills/codex-skill-forge/
+  skills/ai-skill-create/
     SKILL.md
     agents/openai.yaml
     references/
@@ -89,7 +95,7 @@ Bu kontrol şunları doğrular:
 
 ## 🧠 Nasıl Çalışır?
 
-`$codex-skill-forge` çağrıldığında Codex’i şu akıştan geçirir:
+`$ai-skill-create` çağrıldığında Codex’i şu akıştan geçirir:
 
 1. brief ve örnekleri anla
 2. instruction-only, references, scripts, assets veya plugin kararını ver
@@ -109,6 +115,8 @@ Bu kontrol şunları doğrular:
 - [Plugin And Marketplace](docs/PLUGIN_AND_MARKETPLACE.md)
 - [Windows Notes](docs/WINDOWS.md)
 - [Public Repo Checklist](docs/PUBLIC_REPO_CHECKLIST.md)
+- [SEO And Discoverability](docs/SEO.md)
+- [GitHub Settings](docs/GITHUB_SETTINGS.md)
 - [Sources](docs/SOURCES.md)
 
 ## 🔐 Güvenlik Modeli

@@ -1,7 +1,7 @@
 $ErrorActionPreference = "Stop"
 $Root = Resolve-Path (Join-Path $PSScriptRoot "..")
 $TempBase = [System.IO.Path]::GetFullPath([System.IO.Path]::GetTempPath())
-$TempRoot = Join-Path $TempBase ("codex-skill-forge-install-test-" + [Guid]::NewGuid().ToString("N"))
+$TempRoot = Join-Path $TempBase ("ai-skill-create-install-test-" + [Guid]::NewGuid().ToString("N"))
 $PowerShellRunner = if (Get-Command powershell.exe -ErrorAction SilentlyContinue) { "powershell.exe" } else { "pwsh" }
 
 function Invoke-Install {
@@ -21,7 +21,7 @@ try {
   }
 
   Invoke-Install @("-DestinationRoot", $TempRoot, "-AllowCustomDestination", "-Yes") | Out-Null
-  $InstalledSkill = Join-Path $TempRoot "skills\codex-skill-forge"
+  $InstalledSkill = Join-Path $TempRoot "skills\ai-skill-create"
   if (-not (Test-Path -LiteralPath (Join-Path $InstalledSkill "SKILL.md"))) {
     throw "Temp install did not copy SKILL.md."
   }
@@ -45,7 +45,7 @@ try {
   }
 
   Invoke-Install @("-DestinationRoot", $TempRoot, "-AllowCustomDestination", "-Force", "-Yes") | Out-Null
-  $backups = Get-ChildItem -LiteralPath (Join-Path $TempRoot "skills") -Directory -Filter "codex-skill-forge.backup-*"
+  $backups = Get-ChildItem -LiteralPath (Join-Path $TempRoot "skills") -Directory -Filter "ai-skill-create.backup-*"
   if (-not $backups) {
     throw "Force install did not create a timestamped backup."
   }

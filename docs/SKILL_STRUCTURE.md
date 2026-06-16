@@ -1,11 +1,11 @@
 # Skill Structure
 
-Codex Skill Forge uses the plugin-compatible layout:
+AI Skill Create uses the plugin-compatible layout:
 
 ```text
-plugins/codex-skill-forge/
+plugins/ai-skill-create/
   .codex-plugin/plugin.json
-  skills/codex-skill-forge/
+  skills/ai-skill-create/
     SKILL.md
     agents/openai.yaml
     references/
@@ -18,7 +18,7 @@ plugins/codex-skill-forge/
 The runtime skill folder is:
 
 ```text
-plugins/codex-skill-forge/skills/codex-skill-forge
+plugins/ai-skill-create/skills/ai-skill-create
 ```
 
 It contains only files that help another Codex instance use the skill.

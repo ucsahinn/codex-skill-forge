@@ -2,12 +2,12 @@
 
 ## v0.1.0
 
-Initial public release of Codex Skill Forge.
+Initial public release of AI Skill Create.
 
 Highlights:
 
 - self-contained Codex plugin package
-- `codex-skill-forge` runtime skill
+- `ai-skill-create` runtime skill
 - progressive-disclosure references
 - deterministic scaffold and validation helpers
 - Windows-first install dry-run
@@ -17,8 +17,8 @@ Highlights:
 Install:
 
 ```powershell
-git clone https://github.com/ucsahinn/codex-skill-forge.git
-cd codex-skill-forge
+git clone https://github.com/ucsahinn/ai-skill-create.git
+cd ai-skill-create
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/install.ps1 -DryRun
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/install.ps1 -Yes
 ```

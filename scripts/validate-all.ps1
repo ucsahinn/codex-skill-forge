@@ -21,9 +21,9 @@ function Invoke-Step {
 Push-Location $Root
 try {
   Invoke-Step "repository structure" { node scripts/validate-structure.mjs }
-  Invoke-Step "skill frontmatter" { node scripts/validate-skill-frontmatter.mjs plugins/codex-skill-forge/skills/codex-skill-forge/SKILL.md }
-  Invoke-Step "agents/openai.yaml" { node scripts/validate-openai-yaml.mjs plugins/codex-skill-forge/skills/codex-skill-forge/agents/openai.yaml }
-  Invoke-Step "plugin manifest" { node scripts/validate-plugin-json.mjs plugins/codex-skill-forge/.codex-plugin/plugin.json }
+  Invoke-Step "skill frontmatter" { node scripts/validate-skill-frontmatter.mjs plugins/ai-skill-create/skills/ai-skill-create/SKILL.md }
+  Invoke-Step "agents/openai.yaml" { node scripts/validate-openai-yaml.mjs plugins/ai-skill-create/skills/ai-skill-create/agents/openai.yaml }
+  Invoke-Step "plugin manifest" { node scripts/validate-plugin-json.mjs plugins/ai-skill-create/.codex-plugin/plugin.json }
   Invoke-Step "marketplace metadata" { node scripts/validate-marketplace.mjs .agents/plugins/marketplace.json }
   Invoke-Step "markdown links" { node scripts/validate-markdown-links.mjs }
   Invoke-Step "script syntax" { powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/check-script-syntax.ps1 }

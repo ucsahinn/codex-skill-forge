@@ -1,14 +1,14 @@
 {
-  "name": "codex-skill-forge",
+  "name": "ai-skill-create",
   "interface": {
-    "displayName": "Codex Skill Forge"
+    "displayName": "AI Skill Create"
   },
   "plugins": [
     {
-      "name": "codex-skill-forge",
+      "name": "ai-skill-create",
       "source": {
         "source": "local",
-        "path": "./plugins/codex-skill-forge"
+        "path": "./plugins/ai-skill-create"
       },
       "policy": {
         "installation": "AVAILABLE",

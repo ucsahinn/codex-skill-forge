@@ -9,7 +9,7 @@ Forward tests should look like user requests, not reviews.
 Good:
 
 ```text
-Use $codex-skill-forge at ./plugins/codex-skill-forge/skills/codex-skill-forge to create a new skill from this brief. Do not edit files. Return the proposed structure and validation checks.
+Use $ai-skill-create at ./plugins/ai-skill-create/skills/ai-skill-create to create a new skill from this brief. Do not edit files. Return the proposed structure and validation checks.
 ```
 
 Bad:

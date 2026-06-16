@@ -24,7 +24,7 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/install.ps1 -Yes
 
 - The installer uses `$env:CODEX_HOME` when set.
 - Otherwise it uses `$HOME\.codex`.
-- It writes only `skills\codex-skill-forge`.
+- It writes only `skills\ai-skill-create`.
 - Existing installs are not replaced unless `-Force -Yes` is provided.
 - Replacement creates a timestamped backup.
 

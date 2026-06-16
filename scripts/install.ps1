@@ -8,7 +8,7 @@ param(
 
 $ErrorActionPreference = "Stop"
 $RepoRoot = Resolve-Path (Join-Path $PSScriptRoot "..")
-$SourceSkill = Join-Path $RepoRoot "plugins\codex-skill-forge\skills\codex-skill-forge"
+$SourceSkill = Join-Path $RepoRoot "plugins\ai-skill-create\skills\ai-skill-create"
 
 if (-not (Test-Path -LiteralPath $SourceSkill)) {
   throw "Source skill folder not found: $SourceSkill"
@@ -38,9 +38,9 @@ if ($DestinationRoot.TrimEnd('\').Equals($HomeRoot, [System.StringComparison]::O
   throw "Refusing to install directly to the user home directory."
 }
 $TargetParent = Join-Path $DestinationRoot "skills"
-$TargetSkill = Join-Path $TargetParent "codex-skill-forge"
+$TargetSkill = Join-Path $TargetParent "ai-skill-create"
 
-Write-Host "Codex Skill Forge installer"
+Write-Host "AI Skill Create installer"
 Write-Host "Source: $SourceSkill"
 Write-Host "Target: $TargetSkill"
 
@@ -71,4 +71,4 @@ if (Test-Path -LiteralPath $TargetSkill) {
 }
 
 Copy-Item -LiteralPath $SourceSkill -Destination $TargetSkill -Recurse
-Write-Host "OK: installed codex-skill-forge"
+Write-Host "OK: installed ai-skill-create"

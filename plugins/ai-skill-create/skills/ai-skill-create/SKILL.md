@@ -1,9 +1,9 @@
 ---
-name: codex-skill-forge
+name: ai-skill-create
 description: Create, improve, validate, forward-test, and package Codex skills from a user's brief, examples, files, or instructions. Use when asked to design a new skill, update an existing SKILL.md, add references/scripts/assets, create agents/openai.yaml, validate skill structure, or prepare a skill for plugin/marketplace/public repo distribution.
 ---
 
-# Codex Skill Forge
+# AI Skill Create
 
 Use this skill to turn a user brief into a reliable Codex skill package. Optimize for concise runtime instructions, strong trigger metadata, progressive disclosure, deterministic validation, safe generated content, and public install readiness.
 

@@ -1,4 +1,4 @@
-# &#128736; Codex Skill Forge - README completa en español
+# &#128736; AI Skill Create - README completa en español
 
 [&#127468;&#127463; English](README.md) | [&#127465;&#127466; Deutsch](README.de.md) | [&#127466;&#127480; Español](README.es.md) | [&#127463;&#127479; Português (Brasil)](README.pt-BR.md) | [&#127481;&#127479; Türkçe](README.tr.md) | [&#127467;&#127479; Français](README.fr.md)
 
@@ -14,11 +14,11 @@ Empieza por el README canónico si necesitas la descripción inglesa más actual
 
 |Área | Detalle|
 |--- | ---|
-|Estado | Public repository: ucsahinn/codex-skill-forge|
+|Estado | Public repository: ucsahinn/ai-skill-create|
 |Fuente de verdad | [README canónico en inglés](README.md)|
 |Usuarios | Codex users creating reusable skills.; Maintainers preparing public skill repositories.|
 |Validación | SKILL.md frontmatter is valid and trigger description is front-loaded.; Plugin JSON and optional agents/openai.yaml parse cleanly.|
-|Seguridad | Includes a plugin package under plugins/codex-skill-forge.; Keeps the runtime SKILL.md lean and moves deep guidance into references.|
+|Seguridad | Includes a plugin package under plugins/ai-skill-create.; Keeps the runtime SKILL.md lean and moves deep guidance into references.|
 
 ## Qué es este repositorio
 
@@ -60,9 +60,9 @@ Empieza por el README canónico si necesitas la descripción inglesa más actual
 
 |Ruta | Por qué importa|
 |--- | ---|
-|[plugins/codex-skill-forge/skills/codex-skill-forge/SKILL.md](plugins/codex-skill-forge/skills/codex-skill-forge/SKILL.md) | the actual Codex skill entrypoint|
-|[plugins/codex-skill-forge/skills/codex-skill-forge/references/](plugins/codex-skill-forge/skills/codex-skill-forge/references/) | progressive-disclosure knowledge|
-|[plugins/codex-skill-forge/skills/codex-skill-forge/scripts/](plugins/codex-skill-forge/skills/codex-skill-forge/scripts/) | deterministic scaffold and validation helpers|
+|[plugins/ai-skill-create/skills/ai-skill-create/SKILL.md](plugins/ai-skill-create/skills/ai-skill-create/SKILL.md) | the actual Codex skill entrypoint|
+|[plugins/ai-skill-create/skills/ai-skill-create/references/](plugins/ai-skill-create/skills/ai-skill-create/references/) | progressive-disclosure knowledge|
+|[plugins/ai-skill-create/skills/ai-skill-create/scripts/](plugins/ai-skill-create/skills/ai-skill-create/scripts/) | deterministic scaffold and validation helpers|
 |[templates/](templates/) | starter files for generated skills and plugins|
 |[tests/forward-prompts/](tests/forward-prompts/) | realistic prompts for forward testing|
 |[docs/](docs/) | install, validation, plugin and public repo guidance|
@@ -99,7 +99,7 @@ gitleaks dir . --no-banner --redact
 
 ## Límite de seguridad
 
-- Includes a plugin package under plugins/codex-skill-forge.
+- Includes a plugin package under plugins/ai-skill-create.
 - Keeps the runtime SKILL.md lean and moves deep guidance into references.
 - Ships validation scripts for structure, frontmatter, plugin manifests, marketplace metadata, scripts and links.
 - Includes forward-test prompts so generated skills can be checked against realistic requests.

@@ -1,0 +1,6 @@
+interface:
+  display_name: "AI Skill Create"
+  short_description: "Build reliable Codex skills."
+  default_prompt: "Use $ai-skill-create to create, validate, and package a new Codex skill from this brief."
+policy:
+  allow_implicit_invocation: true

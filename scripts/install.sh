@@ -29,16 +29,16 @@ done
 
 SCRIPT_DIR=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
 REPO_ROOT=$(CDPATH= cd -- "$SCRIPT_DIR/.." && pwd)
-SOURCE_SKILL="$REPO_ROOT/plugins/codex-skill-forge/skills/codex-skill-forge"
+SOURCE_SKILL="$REPO_ROOT/plugins/ai-skill-create/skills/ai-skill-create"
 TARGET_PARENT="$DESTINATION_ROOT/skills"
-TARGET_SKILL="$TARGET_PARENT/codex-skill-forge"
+TARGET_SKILL="$TARGET_PARENT/ai-skill-create"
 
 if [ ! -d "$SOURCE_SKILL" ]; then
   echo "ERROR: source skill folder not found: $SOURCE_SKILL" >&2
   exit 1
 fi
 
-echo "Codex Skill Forge installer"
+echo "AI Skill Create installer"
 echo "Source: $SOURCE_SKILL"
 echo "Target: $TARGET_SKILL"
 
@@ -80,4 +80,4 @@ if [ -e "$TARGET_SKILL" ]; then
 fi
 
 cp -R "$SOURCE_SKILL" "$TARGET_SKILL"
-echo "OK: installed codex-skill-forge"
+echo "OK: installed ai-skill-create"
